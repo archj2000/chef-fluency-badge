@@ -5,9 +5,9 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 #
 
-if node('plaform_family') == "rhel"
+if node('platform_family') == "rhel"
 	package = "httpd"
-elsif node('plaform_family') == "debian"
+elsif node('platform_family') == "debian"
 	package = "apache2"
 end
 
